@@ -2,10 +2,10 @@ require 'tweetstream'
 
 class Worker
   TweetStream.configure do |config|
-    config.consumer_key       = 'U1Qmj1XHqLTBmihKxzaGo6TXj'
-    config.consumer_secret    = 'FcHaCFqtaSruoozyA7rBXV0SSnObThKpAJmQa3qAwhGW2TkrG3'
-    config.oauth_token        = '2179764548-P9vjWJKPyuY9g8kPsKLr1aePrRshN7Pf0L2R8ML'
-    config.oauth_token_secret = '3Hjz7IWATv6TXBzRigo2fS4zSeCqAAvBSHb0BwFOfdpl1'
+    config.consumer_key       = ENV['TW_CONSUMER_KEY']
+    config.consumer_secret    = ENV['TW_CONSUMER_SECRET']
+    config.oauth_token        = ENV['TW_OAUTH_TOKEN']
+    config.oauth_token_secret = ENV['TW_OAUTH_TOKEN_SECRET']
     config.auth_method        = :oauth
   end
 
