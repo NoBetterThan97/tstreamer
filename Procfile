@@ -1,1 +1,1 @@
-worker: bundle exec puma -t 1:5
+worker: bundle exec puma -t 1:1

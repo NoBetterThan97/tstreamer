@@ -1,3 +1,3 @@
-require './worker.rb'
+require './init.rb'
 
-run Worker
+run TweetStreamer
